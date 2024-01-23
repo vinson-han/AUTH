@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <a href="/create-post">Create POST</a>
+  <body>
+    <h2>DASHBOARD</h2>
+    <form action="/auth/logout" method="POST">
+      <% if (userPosts || userPosts.length >= 1) { %>
+      <ul>
+        <% for(let i = 0; i < userPosts.length; i++) { %>
+        <li>
+          <a href="/posts/<%= userPosts[i].id %>"><%= userPosts[i].title %></a>
+        </li>
+        <% } %>
+      </ul>
+      <% } else { %>
+      <p>User has no posts. Create one <a href="/create-post">here!</a></p>
+      <% } %> <% if (error) { %>
+      <div>There was an error getting posts</div>
+      <% } %>
+      <button type="submit">Logout</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+  </head>
+  <body>
+    <h1>Create Post</h1>
+    <form action="/posts/create-post" method="POST">
+      <input type="text" id="title" placeholder="Title" name="title" />
+      <input
+        type="textarea"
+        id="content"
+        placeholder="Content"
+        name="content"
+      />
+      <button type="submit">Create</button>
+    </form>
+  </body>
+</html>
