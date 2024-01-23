@@ -8,7 +8,7 @@ Project is focused on concept implement Bycrypt, Authentication with Passport, S
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+<!-- This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details -->
 
 <!-- ## Acknowledgments
 
@@ -19,4 +19,4 @@ Inspiration, code snippets, etc.
 - [dbader](https://github.com/dbader/readme-template)
 - [zenorocha](https://gist.github.com/zenorocha/4526327)
 - [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46) -->
-# AUTH
+<!-- # AUTH -->
