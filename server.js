@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(
   session({
-    secret: "testing", //The secret key should not be put into the code itself but just use an env variable
+    secret: process.env.SECRET_KEY, //The secret key should not be put into the code itself but just use an env variable
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }, // Adjust this based on your deployment environment

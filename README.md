@@ -6,7 +6,20 @@ Simple Server Side Application that user can login, create, post, logout
 
 Project is focused on concept implement Bycrypt, Authentication with Passport, Session, and writing middleware from scratch
 
-## License
+## ENV FILE
+
+Set up your env file to include:
+
+```
+PORT=<Number>
+SECRET_KEY=<String>
+
+DATABASE_URL="mongodb+srv://<username>:<passord>@<mongodbgiven String>.net/<db>"
+
+//mongodbgivenString is given by mongodb
+
+
+```
 
 <!-- This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details -->
 
