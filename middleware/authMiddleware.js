@@ -16,7 +16,6 @@ function setupPassportLocal(passport) {
             },
           });
 
-          console.error(email, "---");
           // Verify user and password
           if (!user || !(await bcrypt.compare(password, user.password))) {
             return done(false, null);
